@@ -1,0 +1,92 @@
+[0m12:29:55.822767 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FFD2461E70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FFD4DCEC80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FFD4DCDA80>]}
+
+
+============================== 12:29:55.827283 | 6c953e8e-963c-4be3-973e-5a46505cc062 ==============================
+[0m12:29:55.827283 [info ] [MainThread]: Running with dbt=1.8.3
+[0m12:29:55.829363 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\rayan\\.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt init rmacedo-dbt-project01', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m12:29:55.847294 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse logging event dictionary. Failed to parse dir field: expected string or bytes-like object.. Dictionary: {'dir': WindowsPath('C:/Users/rayan/.dbt')}
+[0m12:29:55.847294 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m12:30:53.476722 [debug] [MainThread]: Starter project path: C:\_temp\.venv\lib\site-packages\dbt\include\starter_project
+[0m12:30:53.557471 [info ] [MainThread]: 
+Your new dbt project "rmacedo_dbt_project01" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m12:30:53.557471 [info ] [MainThread]: Setting up your profile.
+[0m12:33:04.098815 [error] [MainThread]: Encountered an error:
+
+[0m12:33:04.098815 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\_temp\.venv\lib\site-packages\dbt\cli\requires.py", line 138, in wrapper
+    result, success = func(*args, **kwargs)
+  File "C:\_temp\.venv\lib\site-packages\dbt\cli\requires.py", line 101, in wrapper
+    return func(*args, **kwargs)
+  File "C:\_temp\.venv\lib\site-packages\dbt\cli\main.py", line 470, in init
+    results = task.run()
+  File "C:\_temp\.venv\lib\site-packages\dbt\task\init.py", line 347, in run
+    self.setup_profile(profile_name)
+  File "C:\_temp\.venv\lib\site-packages\dbt\task\init.py", line 263, in setup_profile
+    self.create_profile_from_target(adapter, profile_name=profile_name)
+  File "C:\_temp\.venv\lib\site-packages\dbt\task\init.py", line 180, in create_profile_from_target
+    self.create_profile_from_profile_template(profile_template, profile_name)
+  File "C:\_temp\.venv\lib\site-packages\dbt\task\init.py", line 164, in create_profile_from_profile_template
+    target = self.generate_target_from_input(prompts, initial_target)
+  File "C:\_temp\.venv\lib\site-packages\dbt\task\init.py", line 130, in generate_target_from_input
+    target[key] = click.prompt(
+  File "C:\_temp\.venv\lib\site-packages\click\termui.py", line 164, in prompt
+    value = prompt_func(prompt)
+  File "C:\_temp\.venv\lib\site-packages\click\termui.py", line 147, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m12:33:04.106622 [debug] [MainThread]: Command `dbt init` failed at 12:33:04.106622 after 188.35 seconds
+[0m12:33:04.107709 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FFD2461E70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FFD5ADB550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FFD5AD9600>]}
+[0m12:33:04.107709 [debug] [MainThread]: Flushing usage events
+[0m12:33:09.877052 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BF74B35CF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BF77497BB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BF77496950>]}
+
+
+============================== 12:33:09.879070 | 622ac9f3-5290-4699-9ca9-b83b141166cd ==============================
+[0m12:33:09.879070 [info ] [MainThread]: Running with dbt=1.8.3
+[0m12:33:09.879070 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'profiles_dir': 'C:\\Users\\rayan\\.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt init rmacedo-dbt-project01', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m12:33:28.770194 [info ] [MainThread]: A project called rmacedo_dbt_project01 already exists here.
+[0m12:33:28.771640 [debug] [MainThread]: Command `dbt init` succeeded at 12:33:28.771204 after 18.96 seconds
+[0m12:33:28.771958 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BF74B35CF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BF77023FD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BF774E0BB0>]}
+[0m12:33:28.771958 [debug] [MainThread]: Flushing usage events
+[0m12:33:44.977182 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002174CFB5CF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002174F917BB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002174F916950>]}
+
+
+============================== 12:33:44.977182 | d08d5bfb-fc67-465e-9997-34a1f3a76f46 ==============================
+[0m12:33:44.977182 [info ] [MainThread]: Running with dbt=1.8.3
+[0m12:33:44.977182 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'debug': 'False', 'profiles_dir': 'C:\\Users\\rayan\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt init rmacedo_dbt_project02', 'send_anonymous_usage_stats': 'True'}
+[0m12:33:45.007139 [debug] [MainThread]: Starter project path: C:\_temp\.venv\lib\site-packages\dbt\include\starter_project
+[0m12:33:45.021100 [info ] [MainThread]: 
+Your new dbt project "rmacedo_dbt_project02" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m12:33:45.022097 [info ] [MainThread]: Setting up your profile.
+[0m12:39:50.457305 [info ] [MainThread]: Profile rmacedo_dbt_project02 written to C:\Users\rayan\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m12:39:50.457305 [debug] [MainThread]: Command `dbt init` succeeded at 12:39:50.457305 after 365.54 seconds
+[0m12:39:50.457305 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002174CFB5CF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002174F4A3FD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002174F973BB0>]}
+[0m12:39:50.457305 [debug] [MainThread]: Flushing usage events
